@@ -1,0 +1,27 @@
+.container{
+    background: rgb(79, 79, 80);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 100px;
+    
+}
+.link-conte{
+    display: flex;
+}
+.link-conte li{
+    list-style: none;
+    font-size: 18px;
+    font-weight: 800;
+}
+.link-conte a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+}
+.btn{
+    border: none;
+    cursor: pointer;
+padding: 7px 20px;
+border-radius: 5px;
+margin: 0 15px;
+}
