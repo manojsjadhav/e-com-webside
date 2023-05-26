@@ -1,15 +1,21 @@
-
-import './App.css';
-import Catnavbar from './components/catnavbar/Catnavbar';
-import Menuitem from './components/menu/Menuitem';
-import Navbar from './components/navbar/Navbar';
+import "./App.css";
+import Home from "./Home";
+import Navbar from "./components/navbar/Navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from "./components/login/Login";
+import Register from "./components/register/Register";
 
 function App() {
   return (
     <>
-     <Navbar />
-     <Catnavbar />
-     <Menuitem />
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
